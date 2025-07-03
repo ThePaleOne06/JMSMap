@@ -13,7 +13,7 @@ public class KNOTEN
         daten = inhalt;
     }
 
-    public DATENELEMENT datenLiefern(){
+    public DATENELEMENT getDaten(){
         return daten;
     }
 }

@@ -41,6 +41,32 @@ public class RAUMMATRIX
         }
     }
     
+
+    public void matrixAusgeben() {
+        for(int i=0; i< maxAnzahlKnoten; i++) {
+            for(int j=0; j < maxAnzahlKnoten; j++) {
+                System.out.print(adjazenzmatrix[i][j]+"  ");
+            }
+            System.out.println();
+        }
+    }
+    
+    public void matrixAusgebenVerbindungen() {
+        System.out.print("\t");
+        for(int i=0; i < maxAnzahlKnoten; i++) {
+            System.out.print(knotenfeld[i].getDaten().Raumname.substring(0,2) +"\t");
+        }
+        System.out.println();
+        
+        for(int i=0; i < maxAnzahlKnoten; i++) {
+            System.out.print(knotenfeld[i].getDaten().Raumname.substring(0,2) +"\t");
+            for(int j=0; j < maxAnzahlKnoten; j++) {
+                System.out.print(adjazenzmatrix[i][j]+"\t");
+            }
+            System.out.println();
+        }
+    }
+    
     /**
      * fügt einen Knoten dem Knotenfeld hinzu
      */
@@ -89,5 +115,6 @@ public class RAUMMATRIX
             }
         }
         return -1;
+
     }
 }
