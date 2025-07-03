@@ -40,4 +40,10 @@ public class RAUMMATRIX
             }
         }
     }
+    
+    public void matrixAusgeben() {
+        for(int i=0; i< maxAnzahlKnoten; i++) {
+            for(int j=0; j < maxAnzahlKnoten;
+        }
+    }
 }
