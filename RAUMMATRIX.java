@@ -80,7 +80,7 @@ public class RAUMMATRIX
             }
             else
             {
-                if (knotenfeld[i].getDaten == d)
+                if (knotenfeld[i].getDaten() == d)
                 {
                     System.out.println("Daten bereits vorhanden");
                 }
@@ -92,7 +92,7 @@ public class RAUMMATRIX
     /**
      * fügt eine Kante in die Matrix ein
      */
-    public void kanteHinzufügen(int start, int ziel)
+    public void kanteEinfuegen(int start, int ziel)
     {
         if (start >= 0 && ziel >= 0 && start != ziel && start < maxAnzahlKnoten && ziel < maxAnzahlKnoten)
         {
