@@ -49,15 +49,15 @@ public class TEST
        int A109 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A109", true));
        
        // Kanten in Matrix einfügen
-       raumnetz.kanteHinzufuegen(A101, A102);
-       raumnetz.kanteHinzufuegen(A102, A103);
-       raumnetz.kanteHinzufuegen(A103, A104);
-       raumnetz.kanteHinzufuegen(A104, A105);
-       raumnetz.kanteHinzufuegen(A105, A106);
-       raumnetz.kanteHinzufuegen(A106, A107);
-       raumnetz.kanteHinzufuegen(A107, AT2);
-       raumnetz.kanteHinzufuegen(AT2, A109);
-       raumnetz.kanteHinzufuegen(A107, A109);
+       raumnetz.kanteEinfuegen(A101, A102);
+       raumnetz.kanteEinfuegen(A102, A103);
+       raumnetz.kanteEinfuegen(A103, A104);
+       raumnetz.kanteEinfuegen(A104, A105);
+       raumnetz.kanteEinfuegen(A105, A106);
+       raumnetz.kanteEinfuegen(A106, A107);
+       raumnetz.kanteEinfuegen(A107, AT2);
+       raumnetz.kanteEinfuegen(AT2, A109);
+       raumnetz.kanteEinfuegen(A107, A109);
        
        
     }
