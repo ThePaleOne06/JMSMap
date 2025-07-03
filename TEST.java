@@ -7,7 +7,7 @@
  */
 public class TEST
 {
-    private RAUMMATRIX Raumnetz;
+    private RAUMMATRIX raumnetz;
 
     
     public TEST()
@@ -36,28 +36,28 @@ public class TEST
        **/
        
        
-       Raumnetz = new RAUMMATRIX(9);
+       raumnetz = new RAUMMATRIX(9);
        //Knoten in Matrix einfügen
-       int A101 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A101", true));
-       int A102 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A102", true));
-       int A103 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A103", true));
-       int A104 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A104", true));
-       int A105 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A105", true));
-       int A106 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A106", true));
-       int A107 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A107", true));
-       int AT2 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("AT2", false));
-       int A109 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A109", true));
+       int A101 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A101", true));
+       int A102 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A102", true));
+       int A103 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A103", true));
+       int A104 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A104", true));
+       int A105 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A105", true));
+       int A106 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A106", true));
+       int A107 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A107", true));
+       int AT2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("AT2", false));
+       int A109 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A109", true));
        
        // Kanten in Matrix einfügen
-       Raumnetz.kanteHinzufuegen(A101, A102);
-       Raumnetz.kanteHinzufuegen(A102, A103);
-       Raumnetz.kanteHinzufuegen(A103, A104);
-       Raumnetz.kanteHinzufuegen(A104, A105);
-       Raumnetz.kanteHinzufuegen(A105, B106);
-       Raumnetz.kanteHinzufuegen(A106, A107);
-       Raumnetz.kanteHinzufuegen(A107, AT2);
-       Raumnetz.kanteHinzufuegen(AT2, A109);
-       Raumnetz.kanteHinzufuegen(A107, A109);
+       raumnetz.kanteHinzufuegen(A101, A102);
+       raumnetz.kanteHinzufuegen(A102, A103);
+       raumnetz.kanteHinzufuegen(A103, A104);
+       raumnetz.kanteHinzufuegen(A104, A105);
+       raumnetz.kanteHinzufuegen(A105, A106);
+       raumnetz.kanteHinzufuegen(A106, A107);
+       raumnetz.kanteHinzufuegen(A107, AT2);
+       raumnetz.kanteHinzufuegen(AT2, A109);
+       raumnetz.kanteHinzufuegen(A107, A109);
        
        
     }
