@@ -72,7 +72,8 @@ public class RAUMMATRIX
      */
     public int KnotenEinfuegen(DATENELEMENT d)
     {
-        for (int i; i < maxAnzahlKnoten; i++)
+        int i = 0;
+        for (; i < maxAnzahlKnoten; i++)
         {
             if (knotenfeld[i] == null)
             {
@@ -80,13 +81,14 @@ public class RAUMMATRIX
             }
             else
             {
-                if (knotenfeld[i].getDaten == d)
+                if (knotenfeld[i].getDaten() == d)
                 {
                     System.out.println("Daten bereits vorhanden");
                 }
             }
-            return i;
+            
         }
+        return i;
     }
     
     /**
