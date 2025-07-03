@@ -5,15 +5,17 @@
  */
 public class DATENELEMENT
 {
-    public String Raumname;
-    public boolean istFachraum;
+    private String raumname;
+    private boolean istFachraum;
 
-    
-    public DATENELEMENT(String Raumname, boolean istFachraum)
+    public DATENELEMENT(String raumname, boolean istFachraum)
     {
-        this.Raumname = Raumname;
+        this.raumname = raumname;
         this.istFachraum = istFachraum;
     }
 
-    
+    public String getRaumname()
+    {
+        return raumname;
+    }
 }

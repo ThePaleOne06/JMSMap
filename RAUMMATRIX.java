@@ -64,10 +64,20 @@ public class RAUMMATRIX
     }
     
     /**
+     * fügt eine Kante in die Matrix ein
+     */
+    public void kanteHinzufügen(int start, int ziel)
+    {
+        if (start >= 0 && ziel >= 0 && start != ziel && start < maxAnzahlKnoten && ziel < maxAnzahlKnoten)
+        {
+            //erst Reihe, dann Spalte
+            adjazenzmatrix[start][ziel] = 1;
+            adjazenzmatrix[ziel][start] = 1;
+        }
+    }
+    
+    /**
      * Gibt den Index eines Knotens in der Knotenliste aus
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
      */
     public int getIndex(KNOTEN k)
     {
