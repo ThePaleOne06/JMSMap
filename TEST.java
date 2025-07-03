@@ -12,7 +12,7 @@ public class TEST
     
     public TEST()
     {
-       Raumnetz = new RAUMMATRIX(8);
+       /**Raumnetz = new RAUMMATRIX(8);
        // Knoten Hinzufügen zur Matrix 
         int B101 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B101", false)); 
        int B102 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B102", false));
@@ -26,6 +26,27 @@ public class TEST
        
        // Kanten Hinzufügen zur Matrix
        
+       Raumnetz.kanteHinzufuegen(B101, B102, 1);
+       Raumnetz.kanteHinzufuegen(B102, B103, 1);
+       Raumnetz.kanteHinzufuegen(B103, B104, 1);
+       Raumnetz.kanteHinzufuegen(B104, B105, 1);
+       Raumnetz.kanteHinzufuegen(B115, B116, 1);
+       Raumnetz.kanteHinzufuegen(B116, BIB, 1);
+       Raumnetz.kanteHinzufuegen(BIB, B117, 1);
+       **/
+       
+       
+       Raumnetz = new RAUMMATRIX(7);
+       //Knoten in Matrix einfügen
+       int A101 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A101", true));
+       int A102 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A102", true));
+       int A103 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A103", true));
+       int A104 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A104", true));
+       int A105 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A105", true));
+       int A106 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A106", true));
+       int A107 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("A107", true));
+       
+       // Kanten in Matrix einfügen
        Raumnetz.kanteHinzufuegen(B101, B102, 1);
        Raumnetz.kanteHinzufuegen(B102, B103, 1);
        Raumnetz.kanteHinzufuegen(B103, B104, 1);
