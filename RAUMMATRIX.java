@@ -54,12 +54,12 @@ public class RAUMMATRIX
     public void matrixAusgebenVerbindungen() {
         System.out.print("\t");
         for(int i=0; i < maxAnzahlKnoten; i++) {
-            System.out.print(knotenfeld[i].getDaten().Raumname.substring(0,2) +"\t");
+            System.out.print(knotenfeld[i].getDaten().getRaumname().substring(0,2) +"\t");
         }
         System.out.println();
         
         for(int i=0; i < maxAnzahlKnoten; i++) {
-            System.out.print(knotenfeld[i].getDaten().Raumname.substring(0,2) +"\t");
+            System.out.print(knotenfeld[i].getDaten().getRaumname().substring(0,2) +"\t");
             for(int j=0; j < maxAnzahlKnoten; j++) {
                 System.out.print(adjazenzmatrix[i][j]+"\t");
             }
