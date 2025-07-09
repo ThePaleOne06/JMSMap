@@ -45,19 +45,23 @@ public class TEST
        int A105 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A105", true));
        int A106 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A106", true));
        int A107 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A107", true));
-       int AT2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("AT2", false));
-       int A109 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A109", true));
+       int A108 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A108", false));
+       
        int A110 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A110", true));
        int A111 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A111", true));
        int A112 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A112", true));
        int A113 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A113", true));
        int A114 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A114", false));
+       int Durchgang = raumnetz.KnotenEinfuegen(new DATENELEMENT("Durchgang", false));
+       int WC = raumnetz.KnotenEinfuegen(new DATENELEMENT("WC", false));
        int A115 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A115", true));
-       int A117 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A118", true));
-       int A118 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A119", true));
+       int A116 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A116", false));
+       int A117 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A117", true));
+       int A118 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A118", true));
+       int A119 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A119", true));
        int A120 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A120", true));
        int A121 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A121", true));
-       int AT1 = raumnetz.KnotenEinfuegen(new DATENELEMENT("AT1", false));
+       int Treppe = raumnetz.KnotenEinfuegen(new DATENELEMENT("Treppe", false));
        
        
        
@@ -69,9 +73,9 @@ public class TEST
        raumnetz.kanteEinfuegen(A104, A105);
        raumnetz.kanteEinfuegen(A105, A106);
        raumnetz.kanteEinfuegen(A106, A107);
-       raumnetz.kanteEinfuegen(A107, AT2);
-       raumnetz.kanteEinfuegen(AT2, A109);
-       raumnetz.kanteEinfuegen(A109, A110);
+       //raumnetz.kanteEinfuegen(A107, AT2);
+       //raumnetz.kanteEinfuegen(AT2, A109);
+       //raumnetz.kanteEinfuegen(A109, A110);
        raumnetz.kanteEinfuegen(A110, A111);
        raumnetz.kanteEinfuegen(A111, A112);
        raumnetz.kanteEinfuegen(A112, A113);
@@ -80,8 +84,8 @@ public class TEST
        raumnetz.kanteEinfuegen(A117, A118);
        raumnetz.kanteEinfuegen(A118, A120);
        raumnetz.kanteEinfuegen(A120, A121);
-       raumnetz.kanteEinfuegen(A121, AT1);
-       raumnetz.kanteEinfuegen(AT1, A101);
+       //raumnetz.kanteEinfuegen(A121, AT1);
+       //raumnetz.kanteEinfuegen(AT1, A101);
        
        
        
