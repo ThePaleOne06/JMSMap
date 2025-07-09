@@ -71,7 +71,18 @@ public class TEST
        raumnetz.kanteEinfuegen(A106, A107);
        raumnetz.kanteEinfuegen(A107, AT2);
        raumnetz.kanteEinfuegen(AT2, A109);
-       raumnetz.kanteEinfuegen(A107, A109);
+       raumnetz.kanteEinfuegen(A109, A110);
+       raumnetz.kanteEinfuegen(A110, A111);
+       raumnetz.kanteEinfuegen(A111, A112);
+       raumnetz.kanteEinfuegen(A112, A113);
+       raumnetz.kanteEinfuegen(A113, A114);
+       raumnetz.kanteEinfuegen(A114, A115);
+       raumnetz.kanteEinfuegen(A117, A118);
+       raumnetz.kanteEinfuegen(A118, A120);
+       raumnetz.kanteEinfuegen(A120, A121);
+       raumnetz.kanteEinfuegen(A121, AT1);
+       raumnetz.kanteEinfuegen(AT1, A101);
+       
        
        
     }
