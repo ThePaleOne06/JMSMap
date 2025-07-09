@@ -11,6 +11,7 @@ public class RAUMMATRIX
     private int[][] adjazenzmatrix;
     private boolean[] besucht;
     
+    private Datenbank db = new Datenbank();
     private int anzahlKnoten;
     private int maxAnzahlKnoten;
     
@@ -102,6 +103,11 @@ public class RAUMMATRIX
             adjazenzmatrix[start][ziel] = 1;
             adjazenzmatrix[ziel][start] = 1;
         }
+    }
+    
+    public void tiefensucheStarten(int aktuelleZeit)
+    {
+        tiefensuche(db.getRoom(aktuelleZeit), db.getRoom(aktuelleZeit + 1));
     }
     
     /**

@@ -73,7 +73,8 @@ public class TEST
        raumnetz.kanteEinfuegen(AT2, A109);
        raumnetz.kanteEinfuegen(A107, A109);
        
-       
+       int Zeit = 304;
+       raumnetz.tiefensucheStarten(Zeit);
     }
 
     
