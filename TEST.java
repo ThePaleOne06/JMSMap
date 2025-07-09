@@ -75,6 +75,18 @@ public class TEST
        
        
     }
+    
+    void test_matrix() {
+        Datenbank db = new Datenbank();
+        System.out.println(db.getRoom(102));
+        System.out.println(db.getClass(102));
+        System.out.println(db.getTeacher(102));
+        System.out.println(db.getFloor(db.getRoom(102)));
+        System.out.println(db.getNotes(db.getRoom(102)));
+        System.out.println(db.getUsage(db.getRoom(102)));
+        db.setNotes(db.getRoom(102), "hello");
+        System.out.println(db.getNotes(db.getRoom(102)));
+    }
 
     
 }
