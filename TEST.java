@@ -47,6 +47,20 @@ public class TEST
        int A107 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A107", true));
        int AT2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("AT2", false));
        int A109 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A109", true));
+       int A110 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A110", true));
+       int A111 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A111", true));
+       int A112 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A112", true));
+       int A113 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A113", true));
+       int A114 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A114", false));
+       int A115 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A115", true));
+       int A117 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A118", true));
+       int A118 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A119", true));
+       int A120 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A120", true));
+       int A121 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A121", true));
+       int AT1 = raumnetz.KnotenEinfuegen(new DATENELEMENT("AT1", false));
+       
+       
+       
        
        // Kanten in Matrix einfügen
        raumnetz.kanteEinfuegen(A101, A102);
@@ -60,6 +74,18 @@ public class TEST
        raumnetz.kanteEinfuegen(A107, A109);
        
        
+    }
+    
+    void test_matrix() {
+        Datenbank db = new Datenbank();
+        System.out.println(db.getRoom(102));
+        System.out.println(db.getClass(102));
+        System.out.println(db.getTeacher(102));
+        System.out.println(db.getFloor(db.getRoom(102)));
+        System.out.println(db.getNotes(db.getRoom(102)));
+        System.out.println(db.getUsage(db.getRoom(102)));
+        db.setNotes(db.getRoom(102), "hello");
+        System.out.println(db.getNotes(db.getRoom(102)));
     }
 
     
