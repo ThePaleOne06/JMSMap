@@ -143,6 +143,7 @@ public class TEST
        raumnetz.kanteEinfuegen(A220, A221);
        raumnetz.kanteEinfuegen(A221, Treppe2);
        raumnetz.kanteEinfuegen(Treppe2, A201);
+       raumnetz.kanteEinfuegen(Treppe, Treppe2);
        
        
        
