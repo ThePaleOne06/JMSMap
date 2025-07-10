@@ -145,7 +145,7 @@ public class TEST
        raumnetz.kanteEinfuegen(Treppe2, A201);
        raumnetz.kanteEinfuegen(Treppe, Treppe2);
        
-       raumnetz.tiefensuche(A220, A221);
+       raumnetz.tiefensuche(A115, A221);
        
     }
     
