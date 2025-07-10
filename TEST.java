@@ -36,7 +36,7 @@ public class TEST
        **/
        
        
-       raumnetz = new RAUMMATRIX(44);
+       raumnetz = new RAUMMATRIX(46);
        //Knoten des ersten Stocks in Matrix einfügen
        int A101 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A101", true));
        int A102 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A102", true));
@@ -117,6 +117,32 @@ public class TEST
        raumnetz.kanteEinfuegen(A120, A121);
        raumnetz.kanteEinfuegen(A121, Treppe);
        raumnetz.kanteEinfuegen(Treppe, A101);
+       
+       // Kanten im zweiten Stock in Matrix einfügen
+       
+       raumnetz.kanteEinfuegen(A201, A202);
+       raumnetz.kanteEinfuegen(A202, A203);
+       raumnetz.kanteEinfuegen(A203, A204);
+       raumnetz.kanteEinfuegen(A204, A205);
+       raumnetz.kanteEinfuegen(A205, A206);
+       raumnetz.kanteEinfuegen(A206, A207);
+       raumnetz.kanteEinfuegen(A207, A208);
+       raumnetz.kanteEinfuegen(A208, A210);
+       raumnetz.kanteEinfuegen(A210, A211);
+       raumnetz.kanteEinfuegen(A211, A212);
+       raumnetz.kanteEinfuegen(A212, A213);
+       raumnetz.kanteEinfuegen(A213, A214);
+       raumnetz.kanteEinfuegen(A214, A215);
+       raumnetz.kanteEinfuegen(A214, Durchgang2);
+       raumnetz.kanteEinfuegen(Durchgang2, WC2);
+       raumnetz.kanteEinfuegen(WC2, A215);
+       raumnetz.kanteEinfuegen(A215, A216);
+       raumnetz.kanteEinfuegen(A216, A217);
+       raumnetz.kanteEinfuegen(A217, A218);
+       raumnetz.kanteEinfuegen(A218, A220);
+       raumnetz.kanteEinfuegen(A220, A221);
+       raumnetz.kanteEinfuegen(A221, Treppe2);
+       raumnetz.kanteEinfuegen(Treppe2, A201);
        
        
        
