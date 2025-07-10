@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Beschreiben Sie hier die Klasse RAUMMATRIX.
  * 
@@ -8,6 +8,8 @@
 public class RAUMMATRIX
 {
     private KNOTEN[] knotenfeld;
+    private ArrayList<String> optimalerWeg;
+    private ArrayList<String> aktuellerWeg;
     private int[][] adjazenzmatrix;
     private boolean[] besucht;
     
@@ -15,8 +17,10 @@ public class RAUMMATRIX
     private int maxAnzahlKnoten;
     
     private final int infinity = Integer.MAX_VALUE;
+    private int optimalelaenge;
     private String aktWeg = "";
     private int aktLaenge = 0;
+    
 
     /**
      * Konstruktor für Objekte der Klasse RAUMMATRIX
@@ -120,22 +124,35 @@ public class RAUMMATRIX
 
     }
     
-    public void tiefensucheSchritt(int knotenIdx) {
-        besucht[knotenIdx]=true;
-        System.out.println(knotenfeld[knotenIdx].getDaten().getRaumname());
-        
-        for(int i=0; i < maxAnzahlKnoten; i++) {
-            if(adjazenzmatrix[knotenIdx][i] > 0 && besucht[i]==false) {
-                tiefensucheSchritt(i);
+    public void tiefensucheSchritt(int aktuell, int zielknotenIdx, int laenge) {
+        besucht[aktuell]=true;
+        aktuellerWeg.add(knotenfeld[aktuell].getDaten().getRaumname());
+        System.out.println(knotenfeld[aktuell].getDaten().getRaumname());
+        if(aktuell == zielknotenIdx){
+            if(laenge < optimalelaenge){
+                optimalelaenge = laenge;
+                optimalerWeg = (ArrayList<String>) aktuellerWeg.clone();
+            }
+            
+        }
+        else{
+            for(int i=0; i < maxAnzahlKnoten; i++) {
+                if(adjazenzmatrix[aktuell][i] > 0 && besucht[i]==false) {
+                    tiefensucheSchritt(i, zielknotenIdx, laenge + adjazenzmatrix[aktuell][i]);
+                }
             }
         }
+        besucht[aktuell]=false;
+        aktuellerWeg.remove(knotenfeld[aktuell].getDaten().getRaumname());
     }
     
-    public void tiefensuche(int startKnotenIdx) {
+    public void tiefensuche(int startKnotenIdx, int zielKnotenIdx) {
         for(int i=0; i < maxAnzahlKnoten; i++) {
             besucht[i]=false;
         }
-        tiefensucheSchritt(startKnotenIdx);
+        optimalelaenge = infinity;
+        tiefensucheSchritt(startKnotenIdx, zielKnotenIdx, 0);
+        
     }
     
     public boolean istZusammenhaengend() {
