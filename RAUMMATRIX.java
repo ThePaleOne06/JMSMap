@@ -125,4 +125,28 @@ public class RAUMMATRIX
         return -1;
 
     }
+    
+    public void tiefensucheSchritt(int knotenIdx) {
+        besucht[knotenIdx]=true;
+        System.out.println(knotenfeld[knotenIdx].getDaten().getRaumname());
+        
+        for(int i=0; i < maxAnzahlKnoten; i++) {
+            if(adjazenzmatrix[knotenIdx][i] > 0 && besucht[i]==false) {
+                tiefensucheSchritt(i);
+            }
+        }
+    }
+    
+    public void tiefensuche(int startKnotenIdx) {
+        for(int i=0; i < maxAnzahlKnoten; i++) {
+            besucht[i]=false;
+        }
+        tiefensucheSchritt(startKnotenIdx);
+    }
+    
+    public boolean istZusammenhaengend() {
+        boolean ergebnis=false;
+        
+        return ergebnis;
+    }
 }
