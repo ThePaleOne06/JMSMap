@@ -31,8 +31,10 @@ public class RAUMMATRIX
         knotenfeld = new KNOTEN[maxAnzahlKnoten];
         besucht = new boolean[maxAnzahlKnoten];
         adjazenzmatrix = new int[maxAnzahlKnoten][maxAnzahlKnoten];
+        optimalerWeg = new ArrayList<String>();
+        aktuellerWeg = new ArrayList<String>();
         this.maxAnzahlKnoten = maxAnzahlKnoten;
-        
+            
         for(int i=0; i < maxAnzahlKnoten; i=i+1) {
             for(int j=0; j < maxAnzahlKnoten; j=j+1) {
                 if(i==j) {
@@ -129,6 +131,7 @@ public class RAUMMATRIX
         aktuellerWeg.add(knotenfeld[aktuell].getDaten().getRaumname());
         System.out.println(knotenfeld[aktuell].getDaten().getRaumname());
         if(aktuell == zielknotenIdx){
+            System.out.println("ZIEL");
             if(laenge < optimalelaenge){
                 optimalelaenge = laenge;
                 optimalerWeg = (ArrayList<String>) aktuellerWeg.clone();
@@ -138,7 +141,7 @@ public class RAUMMATRIX
         else{
             for(int i=0; i < maxAnzahlKnoten; i++) {
                 if(adjazenzmatrix[aktuell][i] > 0 && besucht[i]==false) {
-                    tiefensucheSchritt(i, zielknotenIdx, laenge + adjazenzmatrix[aktuell][i]);
+                    tiefensucheSchritt(i, zielknotenIdx, laenge + 1);
                 }
             }
         }
@@ -152,8 +155,8 @@ public class RAUMMATRIX
         }
         optimalelaenge = infinity;
         tiefensucheSchritt(startKnotenIdx, zielKnotenIdx, 0);
-        System.out.println(optimalelaenge);
-        System.out.println(optimalerWeg);
+        System.out.println("länge "+optimalelaenge);
+        System.out.println("Weg "+optimalerWeg);
     }
     
     public boolean istZusammenhaengend() {
