@@ -13,6 +13,7 @@ public class RAUMMATRIX
     private int[][] adjazenzmatrix;
     private boolean[] besucht;
     
+    private Datenbank db = new Datenbank();
     private int anzahlKnoten;
     private int maxAnzahlKnoten;
     
@@ -110,14 +111,19 @@ public class RAUMMATRIX
         }
     }
     
+    public void tiefensucheStarten(int aktuelleZeit)
+    {
+        tiefensuche(getIndex(db.getRoom(aktuelleZeit)), getIndex(db.getRoom(aktuelleZeit + 1)));
+    }
+    
     /**
      * Gibt den Index eines Knotens in der Knotenliste aus
      */
-    public int getIndex(KNOTEN k)
+    public int getIndex(String knotenName)
     {
         for (int i = 0; i < maxAnzahlKnoten; i++)
         {
-            if (k == knotenfeld[i])
+            if (knotenName == knotenfeld[i].daten.getRaumname())
             {
                 return i;
             }
