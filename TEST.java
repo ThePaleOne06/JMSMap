@@ -158,6 +158,7 @@ public class TEST
         System.out.println(db.getUsage(db.getRoom(102)));
         db.setNotes(db.getRoom(102), "hello");
         System.out.println(db.getNotes(db.getRoom(102)));
+        
     }
 
     
