@@ -143,6 +143,7 @@ public class TEST
        raumnetz.kanteEinfuegen(A220, A221);
        raumnetz.kanteEinfuegen(A221, Treppe2);
        raumnetz.kanteEinfuegen(Treppe2, A201);
+       raumnetz.kanteEinfuegen(Treppe, Treppe2);
        
        raumnetz.tiefensuche(A220, A221);
        
@@ -158,6 +159,7 @@ public class TEST
         System.out.println(db.getUsage(db.getRoom(102)));
         db.setNotes(db.getRoom(102), "hello");
         System.out.println(db.getNotes(db.getRoom(102)));
+        
     }
 
     
