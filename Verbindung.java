@@ -47,26 +47,26 @@ public class Verbindung
             statement.executeUpdate("insert into Timetable values(102, 'A102', 'Biology', 'Dr. Emily')");
             statement.executeUpdate("insert into Timetable values(103, 'A103', 'Chemistry', 'Ms. Davis')");
             statement.executeUpdate("insert into Timetable values(104, 'A104', 'Physics', 'Mr. Brown')");
-            statement.executeUpdate("insert into Timetable values(105, 'A105', 'English Literature', 'Ms. Wilson')");
-            statement.executeUpdate("insert into Timetable values(106, 'A106', 'History', 'Mr. Thompson')");
+            statement.executeUpdate("insert into Timetable values(105, 'A205', 'English Literature', 'Ms. Wilson')");
+            statement.executeUpdate("insert into Timetable values(106, 'A206', 'History', 'Mr. Thompson')");
 
-            statement.executeUpdate("insert into Timetable values(201, 'A107', 'Art', 'Ms. Taylor')");
+            statement.executeUpdate("insert into Timetable values(201, 'A207', 'Art', 'Ms. Taylor')");
             statement.executeUpdate("insert into Timetable values(202, 'A110', 'Music', 'Mr. Anderson')");
-            statement.executeUpdate("insert into Timetable values(203, 'A111', 'Physical Education', 'Ms. Martinez')");
+            statement.executeUpdate("insert into Timetable values(203, 'A211', 'Physical Education', 'Ms. Martinez')");
             statement.executeUpdate("insert into Timetable values(204, 'A112', 'Computer Science', 'Mr. Clark')");
-            statement.executeUpdate("insert into Timetable values(205, 'A113', 'Geography', 'Ms. Lewis')");
+            statement.executeUpdate("insert into Timetable values(205, 'A213', 'Geography', 'Ms. Lewis')");
             statement.executeUpdate("insert into Timetable values(206, 'A113', 'Math', 'Ms. Beans')");
 
             statement.executeUpdate("insert into Timetable values(301, 'A114', 'Drama', 'Ms. Robinson')");
-            statement.executeUpdate("insert into Timetable values(302, 'A115', 'Economics', 'Mr. White')");
-            statement.executeUpdate("insert into Timetable values(303, 'A116', 'Psychology', 'Dr. Harris')");
-            statement.executeUpdate("insert into Timetable values(304, 'A117', 'Sociology', 'Ms. Walker')");
-            statement.executeUpdate("insert into Timetable values(305, 'A118', 'Philosophy', 'Mr. Hall')");
+            statement.executeUpdate("insert into Timetable values(302, 'A215', 'Economics', 'Mr. White')");
+            statement.executeUpdate("insert into Timetable values(303, 'A216', 'Psychology', 'Dr. Harris')");
+            statement.executeUpdate("insert into Timetable values(304, 'A217', 'Sociology', 'Ms. Walker')");
+            statement.executeUpdate("insert into Timetable values(305, 'A218', 'Philosophy', 'Mr. Hall')");
             statement.executeUpdate("insert into Timetable values(306, 'A119', 'Statistics', 'Ms. Allen')");
 
-            statement.executeUpdate("insert into Timetable values(401, 'A120', 'Environmental Science', 'Dr. Young')");
-            statement.executeUpdate("insert into Timetable values(402, 'A121', 'Business Studies', 'Mr. King')");
-            statement.executeUpdate("insert into Timetable values(403, 'A101', 'Creative Writing', 'Ms. Wright')");
+            statement.executeUpdate("insert into Timetable values(401, 'A220', 'Environmental Science', 'Dr. Young')");
+            statement.executeUpdate("insert into Timetable values(402, 'A221', 'Business Studies', 'Mr. King')");
+            statement.executeUpdate("insert into Timetable values(403, 'A201', 'Creative Writing', 'Ms. Wright')");
             statement.executeUpdate("insert into Timetable values(404, 'A102', 'Health Education', 'Mr. Scott')");
             statement.executeUpdate("insert into Timetable values(405, 'A103', 'Digital Media', 'Ms. Green')");
             statement.executeUpdate("insert into Timetable values(406, 'A104', 'Web Development', 'Mr. Adams')");
