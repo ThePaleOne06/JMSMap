@@ -87,7 +87,7 @@ public class TEST
        int A219 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A119", true));
        int A220 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A120", true));
        int A221 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A121", false));
-       int Treppe2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("Treppe", false));
+       int Treppe2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("Treppe2", false));
        
        
        
