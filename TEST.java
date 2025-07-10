@@ -12,7 +12,12 @@ public class TEST
     
     public TEST()
     {
+
        /**
+
+
+       /**Raumnetz = new RAUMMATRIX(8);
+
        // Knoten Hinzufügen zur Matrix 
         int B101 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B101", false)); 
        int B102 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B102", false));
@@ -149,6 +154,7 @@ public class TEST
        
        raumnetz.tiefensuche(A115, A221);
        
+
     }
     
     void test_matrix() {
@@ -164,5 +170,5 @@ public class TEST
         
     }
 
-    
-}
+    }
+
