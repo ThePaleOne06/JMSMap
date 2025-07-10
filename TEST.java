@@ -113,7 +113,8 @@ public class TEST
        raumnetz.kanteEinfuegen(A115, A116);
        raumnetz.kanteEinfuegen(A116, A117);
        raumnetz.kanteEinfuegen(A117, A118);
-       raumnetz.kanteEinfuegen(A118, A120);
+       raumnetz.kanteEinfuegen(A118, A119);
+       raumnetz.kanteEinfuegen(A119, A120);
        raumnetz.kanteEinfuegen(A120, A121);
        raumnetz.kanteEinfuegen(A121, Treppe);
        raumnetz.kanteEinfuegen(Treppe, A101);
@@ -139,7 +140,8 @@ public class TEST
        raumnetz.kanteEinfuegen(A215, A216);
        raumnetz.kanteEinfuegen(A216, A217);
        raumnetz.kanteEinfuegen(A217, A218);
-       raumnetz.kanteEinfuegen(A218, A220);
+       raumnetz.kanteEinfuegen(A218, A219);
+       raumnetz.kanteEinfuegen(A219, A220);
        raumnetz.kanteEinfuegen(A220, A221);
        raumnetz.kanteEinfuegen(A221, Treppe2);
        raumnetz.kanteEinfuegen(Treppe2, A201);
