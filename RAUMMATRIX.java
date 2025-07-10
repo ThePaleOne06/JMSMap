@@ -111,17 +111,17 @@ public class RAUMMATRIX
     
     public void tiefensucheStarten(int aktuelleZeit)
     {
-        tiefensuche(db.getRoom(aktuelleZeit), db.getRoom(aktuelleZeit + 1));
+        tiefensuche(getIndex(db.getRoom(aktuelleZeit)), getIndex(db.getRoom(aktuelleZeit + 1)));
     }
     
     /**
      * Gibt den Index eines Knotens in der Knotenliste aus
      */
-    public int getIndex(KNOTEN k)
+    public int getIndex(String knotenName)
     {
         for (int i = 0; i < maxAnzahlKnoten; i++)
         {
-            if (k == knotenfeld[i])
+            if (knotenName == knotenfeld[i].daten.getRaumname())
             {
                 return i;
             }
