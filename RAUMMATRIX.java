@@ -152,7 +152,8 @@ public class RAUMMATRIX
         }
         optimalelaenge = infinity;
         tiefensucheSchritt(startKnotenIdx, zielKnotenIdx, 0);
-        
+        System.out.println(optimalelaenge);
+        System.out.println(optimalerWeg);
     }
     
     public boolean istZusammenhaengend() {
