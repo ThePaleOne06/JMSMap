@@ -65,7 +65,7 @@ public class TEST
        
        //Knoten des zweiten Stocks in Matrix einfügen
        
-       /** 
+        
        int A201 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A101", false));
        int A202 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A102", false));
        int A203 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A103", false));
@@ -79,8 +79,8 @@ public class TEST
        int A212 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A112", false));
        int A213 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A113", false));
        int A214 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A114", false));
-       int Durchgang = raumnetz.KnotenEinfuegen(new DATENELEMENT("Durchgang", false));
-       int WC = raumnetz.KnotenEinfuegen(new DATENELEMENT("WC", false));
+       int Durchgang2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("Durchgang", false));
+       int WC2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("WC", false));
        int A215 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A115", false));
        int A216 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A116", false));
        int A217 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A117", false));
@@ -88,8 +88,8 @@ public class TEST
        int A219 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A119", true));
        int A220 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A120", true));
        int A221 = raumnetz.KnotenEinfuegen(new DATENELEMENT("A121", false));
-       int Treppe = raumnetz.KnotenEinfuegen(new DATENELEMENT("Treppe", false));
-       **/
+       int Treppe2 = raumnetz.KnotenEinfuegen(new DATENELEMENT("Treppe", false));
+       
        
        
        
