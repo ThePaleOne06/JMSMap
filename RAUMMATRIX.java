@@ -159,6 +159,8 @@ public class RAUMMATRIX
         for(int i=0; i < maxAnzahlKnoten; i++) {
             besucht[i]=false;
         }
+        optimalerWeg.clear();
+        aktuellerWeg.clear();
         optimalelaenge = infinity;
         tiefensucheSchritt(startKnotenIdx, zielKnotenIdx, 0);
         System.out.println("länge "+optimalelaenge);

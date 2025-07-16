@@ -13,7 +13,11 @@ public class TEST
     public TEST()
     {
 
+       /**
+
+
        /**Raumnetz = new RAUMMATRIX(8);
+
        // Knoten Hinzufügen zur Matrix 
         int B101 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B101", false)); 
        int B102 = Raumnetz.knotenHinzufuegen(new DATENELEMENT("B102", false));
@@ -27,13 +31,13 @@ public class TEST
        
        // Kanten Hinzufügen zur Matrix
        
-       Raumnetz.kanteHinzufuegen(B101, B102, 1);
-       Raumnetz.kanteHinzufuegen(B102, B103, 1);
-       Raumnetz.kanteHinzufuegen(B103, B104, 1);
-       Raumnetz.kanteHinzufuegen(B104, B105, 1);
-       Raumnetz.kanteHinzufuegen(B115, B116, 1);
-       Raumnetz.kanteHinzufuegen(B116, BIB, 1);
-       Raumnetz.kanteHinzufuegen(BIB, B117, 1);
+       Raumnetz.kanteHinzufuegen(B101, B102);
+       Raumnetz.kanteHinzufuegen(B102, B103);
+       Raumnetz.kanteHinzufuegen(B103, B104);
+       Raumnetz.kanteHinzufuegen(B104, B105);
+       Raumnetz.kanteHinzufuegen(B115, B116);
+       Raumnetz.kanteHinzufuegen(B116, BIB);
+       Raumnetz.kanteHinzufuegen(BIB, B117);
        **/
        
        
@@ -148,23 +152,12 @@ public class TEST
        raumnetz.kanteEinfuegen(Treppe2, A201);
        raumnetz.kanteEinfuegen(Treppe, Treppe2);
        
-       raumnetz.tiefensuche(A115, A221);
+       raumnetz.tiefensucheStarten(204);
        
 
     }
     
-    void test_matrix() {
-        Datenbank db = new Datenbank();
-        System.out.println(db.getRoom(102));
-        System.out.println(db.getClass(102));
-        System.out.println(db.getTeacher(102));
-        System.out.println(db.getFloor(db.getRoom(102)));
-        System.out.println(db.getNotes(db.getRoom(102)));
-        System.out.println(db.getUsage(db.getRoom(102)));
-        db.setNotes(db.getRoom(102), "hello");
-        System.out.println(db.getNotes(db.getRoom(102)));
-        
-    }
+    
 
     }
 
