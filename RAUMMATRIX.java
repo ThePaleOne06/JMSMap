@@ -123,11 +123,13 @@ public class RAUMMATRIX
     {
         for (int i = 0; i < maxAnzahlKnoten; i++)
         {
-            if (knotenName == knotenfeld[i].daten.getRaumname())
+            System.out.println(knotenName + knotenfeld[i].daten.getRaumname() + knotenName == knotenfeld[i].daten.getRaumname());
+            if (knotenName.equals(knotenfeld[i].daten.getRaumname()))
             {
                 return i;
             }
         }
+        
         return -1;
 
     }
